@@ -194,16 +194,17 @@ class Issue {
 extension on FileSpan {
   String format(String message) {
     StringBuffer buffer = StringBuffer();
-    buffer.write(p.prettyUri(sourceUrl));
-    buffer.write(':${start.line + 1}:${(start.column + 1)}: ');
-    buffer.write(message);
+    buffer
+      ..write(p.prettyUri(sourceUrl))
+      ..write(':${start.line + 1}:${(start.column + 1)}')
+      ..write(': $message');
     return buffer.toString();
   }
 
   String info(String message) {
     final buffer = StringBuffer()
       ..write(p.prettyUri(sourceUrl))
-      ..write(':${start.line + 1}:${(start.column + 1)}: ')
+      ..write(':${start.line + 1}:${(start.column + 1)}')
       ..write(': $message');
 
     final highlight = this.highlight();

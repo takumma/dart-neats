@@ -12,7 +12,7 @@ environment:
   sdk: ^3.0.0
 dependencies:
   test: ^1.24.0
-  analyzer: ^5.10.0
+  analyzer: ^6.4.1
   args: ^2.5.0
   markdown: ^7.0.2
   path: ^1.8.3

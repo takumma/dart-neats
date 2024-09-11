@@ -4,7 +4,7 @@ This package provides an easy way to test code samples embedded in documentation
 
 **Disclaimer:** This is not an officially supported Google product.
 
-# Background
+## Background
 
 Writing code samples in documentation comments is a great way to make your code easier to understand.
 And code samples are seen many times in API Documentation and are often copied and used.
@@ -13,7 +13,7 @@ Most dart packages and libraries provide lots of documentation and code samples,
 
 Therefore, `dartdoc_test` provides a way to analyze code samples in documentation comments and detect problems they comtain. This improbes the maintainability and reliability of your documentation.
 
-# Using in cli
+## Using in cli
 
 ```bash
 # Add dartdoc_test as dev dependency
@@ -23,7 +23,7 @@ dart pub add dev:dartdoc_test
 dart run dartdoc_test
 ```
 
-# Using in test
+## Using in test
 
 By creating `test/dartdoc_test.dart`, you can test code samples with using the `dart test` command.
 
@@ -53,7 +53,7 @@ import 'package:dartdoc_test/dartdoc_test.dart';
 void main() => runDartdocTest();
 ```
 
-# Ignore analysis
+## Ignore analysis
 
 If you don't want to analyze a particular code sample, you can exclude it by adding tag `#no-test` within the code block.
 
